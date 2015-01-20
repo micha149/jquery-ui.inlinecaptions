@@ -46,7 +46,7 @@ $.widget( "ui.inlinecaptions", {
             }
         });
 
-        element.bind('keyup.inlinecaptions change.inlinecaptions', function() {
+        element.bind('keyup.inlinecaptions change.inlinecaptions input.inlinecaptions', function() {
             if ($.trim(element.val()) == '') {
                 if (label.is(':hidden')) {
                     label.fadeIn('fast');
